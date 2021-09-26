@@ -1,0 +1,3 @@
+The main program is ex3 , it calls the constructors from class university 
+File university is a class that contains constructors and class student, and also in it is counting the media 
+File student is a class which colect all information about students
