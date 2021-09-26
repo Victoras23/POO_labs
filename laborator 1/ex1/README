@@ -1,0 +1,3 @@
+# In this file the main program is named ex1 . Here I take all information about monitors 
+# File named monitor is the class in that I store all information
+# File named compare take the information from monitor , compare it and output the result .
