@@ -1,0 +1,4 @@
+my program starts from main 
+in class box i stord all the information about boxes 
+output show the stored information
+class area and volume takes the informations from class box and compute the area and volume of each box
