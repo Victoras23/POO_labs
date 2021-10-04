@@ -1,0 +1,9 @@
+Main 2 is just the starting point of this program
+
+In class queue i did 2 different constructors , first with and second without parameters 
+Also in this class i did pop and push functions in order to add and take an element 
+Functions try to pop was created for taking elements using while function 
+In functions push and pop for the first case i introduce a check if queue is not full or empty 
+for the second case i did it just for pop function
+
+in class add_elements I add 3 elements in each queue and extract from them the last elements
