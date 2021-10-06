@@ -1,0 +1,9 @@
+File main id the starting point in shis progrm 
+
+In text.java is stored the string
+
+In compute.java are 2 functions , first count the number of words and return it , and second count the number of sentences and give it in console 
+
+In l_v_c are 2 functions , first count the number of words  , second count the number of vowels and consonants 
+
+Words.java also have 2 functions, first search the numbe of same words and output 5 the most used , and second search the longgest word in this string
