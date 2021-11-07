@@ -1,15 +1,15 @@
 public class Part1 {
 	public static void main(String[] args) {
-		A a=new A();
-		B b=new B();
-		C c=new C();
-		D d=new D();
-		E e=new E();
-		F f=new F();
-		G g=new G();
-		H h=new H();
-		I i=new I();
-		J j=new J();
+		A a=new A("a","x");
+		B b=new B("a","x","b");
+		C c=new C("a","x","b","c");
+		D d=new D("a","x","b","c","d");
+		E e=new E("a","x","b","c","d","e");
+		F f=new F("a","x","b","c","d","e","f");
+		G g=new G("a","x","b","c","d","e","f","g");
+		H h=new H("a","x","b","c","d","e","f","g","h");
+		I i=new I("a","x","b","c","d","e","f","g","h","i");
+		J j=new J("a","x","b","c","d","e","f","g","h","i","j");
 		System.out.println("Class A : a: "+a.a);
 		System.out.println("Class B : a: "+b.a+" b: "+b.b);
 		System.out.println("Class C : a: "+c.a+" b: "+c.b+" c: "+c.c);
@@ -23,41 +23,97 @@ public class Part1 {
 	}
 }
 class A{
-	public String a;
+	protected String a;
+	protected X x;
+	A(String a , String x){
+		this.a=a;
+		this.x= new X(x);
+	}
 }
 
-class B extends A{
-	public String b;
+class B extends A{	
+	protected String b;
+	B(String a, String x , String b) {
+		super(a, x);
+		this.b=b;
+	}
+
 }
 
 class C extends B{
-	public String c;
+	protected String c;
+	C(String a, String x, String b, String c) {
+		super(a, x, b);
+		this.c=c;
+	}
+	
 }
 
 class D extends C{
-	public String d;
+	protected String d;
+	D(String a, String x, String b, String c, String d) {
+		super(a, x, b, c);
+		this.d=d;
+	}
 }
 
 class E extends D{
-	public String e;
+	protected String e;
+	E(String a, String x, String b, String c, String d, String e) {
+		super(a, x, b, c, d);
+		this.e=e;
+	}
+
 }
 
 class F extends E{
-	public String f;
+	protected String f;
+	F(String a, String x, String b, String c, String d, String e, String f) {
+		super(a, x, b, c, d, e);
+		this.f=f;
+	}
+
 }
 
-class G extends F{
-	public String g;
+class G extends F{	
+	protected String g;
+	G(String a, String x, String b, String c, String d, String e, String f, String g) {
+		super(a, x, b, c, d, e, f);
+		this.g=g;
+	}
+
 }
 
 class H extends G{
-	public String h;
+	protected String h;
+	H(String a, String x, String b, String c, String d, String e, String f, String g, String h) {
+		super(a, x, b, c, d, e, f, g);
+		this.h=h;
+	}
+
 }
 
 class I extends H{
-	public String i;
+	protected String i;
+	I(String a, String x, String b, String c, String d, String e, String f, String g, String h, String i) {
+		super(a, x, b, c, d, e, f, g, h);
+		this.i=i;
+	}
+
 }
 
 class J extends I{
-	public String j;
+	protected String j;
+	J(String a, String x, String b, String c, String d, String e, String f, String g, String h, String i, String j) {
+		super(a, x, b, c, d, e, f, g, h, i);
+		this.j=j;
+	}
+
+}
+
+class X {
+	protected String x;
+	X(String x){
+		this.x=x;
+	}
 }
