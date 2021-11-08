@@ -1,4 +1,4 @@
 
-public class AdministrativeStaff {
+public class AdministrativeStaff extends Staff{
 
 }

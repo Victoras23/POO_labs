@@ -1,11 +1,11 @@
-
+import java.util.Date;
 public class Patient extends Person {
 	String id;
 	String fullname ;
 	String gender;
-	String BirthssDayDate;
+	Date birthDay = new Date();;
 	int age;
-	String acceptedDate;
+	Date acceptedDate= new Date();
 	String sickness[];
 	String prescriptions[];
 	String allergies[];

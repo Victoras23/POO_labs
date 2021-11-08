@@ -4,4 +4,5 @@ public class Hospital {
 	String address;
 	String phone;
 	Person p[];
+	Department d;
 }

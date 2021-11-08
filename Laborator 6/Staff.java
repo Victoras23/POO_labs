@@ -1,6 +1,6 @@
-
+import java.util.Date;
 public class Staff extends Person{
-	String joined;
+	Date joined = new Date();
 	String education[];
 	String certification[];
 	String languages[];
